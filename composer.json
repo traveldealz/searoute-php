@@ -1,0 +1,56 @@
+{
+  "name": "traveldealz/searoute-php",
+  "description": "Generate realistic maritime routes in PHP from the bundled searoute network.",
+  "type": "library",
+  "license": "Apache-2.0",
+  "keywords": [
+    "geojson",
+    "routing",
+    "maritime",
+    "shipping",
+    "searoute"
+  ],
+  "homepage": "https://github.com/traveldealz/searoute-php",
+  "support": {
+    "source": "https://github.com/traveldealz/searoute-php",
+    "issues": "https://github.com/traveldealz/searoute-php/issues"
+  },
+  "authors": [
+    {
+      "name": "Travel-Dealz"
+    }
+  ],
+  "require": {
+    "php": "^8.1"
+  },
+  "require-dev": {
+    "pestphp/pest": "^3.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Searoute\\": "src/"
+    },
+    "files": [
+      "src/functions.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Searoute\\Tests\\": "tests/"
+    },
+    "files": [
+      "tests/Pest.php"
+    ]
+  },
+  "scripts": {
+    "test": "vendor/bin/pest",
+    "test:smoke": "@php tests/smoke.php",
+    "example": "@php examples/basic.php"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
