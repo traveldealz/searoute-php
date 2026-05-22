@@ -1,6 +1,6 @@
 # searoute-php
 
-Standalone PHP port of `searoute` for generating realistic maritime routes from the bundled sea network.
+Standalone PHP port of `searoute` for generating realistic maritime routes from the bundled sea network. Done bei AI.
 
 ## Installation
 
